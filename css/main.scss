@@ -2,7 +2,20 @@
 @import 'bootstrap.min';
 @import 'reset';
 @import 'animate';
+@import 'config';
 // Template CSS
 @import 'header';
 @import 'footer';
 @import 'product';
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+li {
+    list-style: none !important;
+}
+
+.margin-reset {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
