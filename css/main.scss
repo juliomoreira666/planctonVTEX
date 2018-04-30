@@ -95,3 +95,18 @@ li {
     background-position: center top;
     z-index: -1;
 }
+
+.tratamentoCorreto h1 {
+    text-align: right;
+    color: $action-color;
+    margin-top: 3.8em;
+}
+
+.banner-tratamento .slick-slide img {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5em;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+}
