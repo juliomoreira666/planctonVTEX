@@ -1,8 +1,8 @@
 // Default CSS
+@import 'config';
 @import 'bootstrap.min';
 @import 'reset';
 @import 'animate';
-@import 'config';
 // Template CSS
 @import 'header';
 @import 'footer';
@@ -76,7 +76,7 @@ li {
 .banner-principal:after {
     content: ' ';
     width: 100%;
-    background-image: url('../img/banner-shadow.png');
+    background-image: url('/arquivos/banner-shadow.png');
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -89,7 +89,7 @@ li {
 .banner-tips {
     margin-top: 0.6em;
     background-size: contain;
-    background-image: url('../img/tips-banner.png');
+    background-image: url('/arquivos/tips-banner.png');
     background-repeat: no-repeat;
     height: 56px;
     background-position: center top;
@@ -109,4 +109,139 @@ li {
     height: 100%;
     cursor: pointer;
     width: 100%;
+}
+
+#ajaxBusy {
+    display: none !important;
+}
+
+.slider-default .product-name a {
+    color: #808080;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+
+.slider-default .product-name {
+    margin-top: 2em;
+    color: #808080;
+    text-align: center;
+    display: block;
+}
+
+.slider-default img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slider-default .price .old-price {
+    margin-top: 2em;
+    color: #808080;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.slider-default .price .installment {
+    color: #808080;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.slider-default .price .best-price {
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.slider-default ul {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.prat-2018 h2 {
+    display: none;
+}
+
+.slider-default .slick-arrow img {
+    max-width: none !important;
+}
+
+.slider-default .slick-next {
+    right: 0px !important;
+}
+
+.slider-default .slick-prev {
+    left: 0px !important;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 9;
+}
+
+.slider-default .slick-next:before,
+.slick-prev:before {
+    content: none !important;
+}
+
+.tratamentoCorreto .slick-next {
+    right: 18px !important;
+}
+
+.tratamentoCorreto .slick-next:before,
+.slick-prev:before {
+    content: none !important;
+}
+
+#destaques-home h1,
+#mais-vendidos-home h1,
+#nossos-kits-home h1 {
+    font-size: 39px;
+    color: #e97a0c;
+    padding: 0.5em;
+    margin: 2.4em;
+    font-weight: bold;
+    border-bottom: 2px solid #e97a0c;
+}
+
+.add {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px 1px rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 25px;
+    padding: 8px;
+    margin: 0 auto;
+    background-color: #51bcb5;
+    width: 40%;
+    display: block;
+    padding: 0px;
+    background-color: #51bcb5;
+    font-size: 18px;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 3em;
+}
+
+.price {
+    width: 100%;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.wrapper-buy-button-asynchronous {
+    width: 100%;
+    float: left;
+    height: 60px;
+    position: relative;
 }
