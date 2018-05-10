@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+.main-menu-footer {
+  background: #fafafa;
+}
+
+.main-menu-footer h3 {
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 1px solid #ededed;
+}
+
+.main-menu-footer .container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.main-menu-footer .col-md-6 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.main-menu-footer ul li a {
+  color: #616567;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.main-menu-footer ul {
+  -webkit-padding-start: 0px;
+}
+
+.main-menu-footer ul li {
+  text-transform: capitalize;
+}
+
+.menu-footer-2 {
+  margin-top: 4em;
+}
+
+.menu-footer-2 .col-md-6 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.menu-footer-2 h3 {
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 1px solid #ededed;
+}
+
+.menu-footer-2 ul li a {
+  color: #616567;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.menu-footer-2 ul {
+  -webkit-padding-start: 0px;
+}
+
+.menu-footer-2 ul li {
+  text-transform: capitalize;
+}
+
+.menu-footer-2 .seguranca ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu-footer-2 .redes-footer li {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer .copyright {
+  background: #15968d;
+  color: #ffff;
+}
+
+footer .copyright .col-md-6 {
+  padding: 60px;
+}
+
+footer .col-md-3 {
+  padding: 20px;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <vtex:template id="2018-styles-plancton" />
+    <title>Home Plancton Produtos</title>
+</head>
+
+<body>
+    <!--Header-->
+    <vtex:template id="2018-plancton-header" />
+    <!--Header-->
+
+    <div class="row margin-reset">
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <vtex.cmc:ProductImage/>
+            </div>
+            <div class="col-md-6">
+                <div class="nome-produto">
+                    <vtex.cmc:productName/>
+                </div>
+                <div class="avaliacao-produto">
+                    <vtex.cmc:evaluationRate/>
+                </div>
+                <div class="preco-produto">
+                    <vtex.cmc:skuPrice/>
+                </div>
+                <div class="comprar-produto">
+                    <vtex.cmc:BuyButton/>
+                </div>
+                <div class="frete-produto">
+                    <vtex.cmc:shippingValue/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-reset descricao-produto">
+        <div class="container-reset">
+            <h1>
+                DESCRIÇÃO
+            </h1>
+            <div class="descricao-texto">
+                <vtex.cmc:ProductDescription/>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-reset avaliacao-consumidor">
+        <div class="container-fluid">
+            <vtex.cmc:UserReview/>
+        </div>
+    </div>
+    <!--Footer-->
+    <vtex:template id="2018-plancton-footer" />
+    <!--Footer-->
+
+    <!--Scripts-->
+    <vtex:template id="2018-scripts-plancton" />
+    <!--Scripts-->
+</body>
+
+</html>
