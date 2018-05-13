@@ -7,28 +7,28 @@ $('.tipos-de-cabelo').slick({
     prevArrow: '<div class="slick-prev"><img src="img/prev-slick.png"/></div>',
     nextArrow: '<div class="slick-next"><img src="img/next-slick.png"/></div>',
     responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: false
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
         }
+    },
+    {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
     ]
 });
 
@@ -41,28 +41,28 @@ $('.banner-tratamento').slick({
     prevArrow: '<div class="slick-prev"><img src="img/prev-slick.png"/></div>',
     nextArrow: '<div class="slick-next"><img src="img/next-slick.png"/></div>',
     responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: false
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
         }
+    },
+    {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
     ]
 });
 
@@ -78,3 +78,13 @@ $('.banner-principal').slick({
     autoplay: true,
     autoplaySpeed: 2000
 });
+
+function changeText() {
+    var botaoComprar = document.querySelector('.buy-button');
+    botaoComprar.text = 'COMPRE JÁ';
+}
+
+$(document).ready(function () {
+    changeText();
+});
+

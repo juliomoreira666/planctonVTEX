@@ -27,6 +27,7 @@ a:hover {
 }
 
 .qualSeuTipo h1 {
+    font-size: 25px;
     margin-top: 3.8em;
     color: $action-color;
 }
@@ -61,12 +62,15 @@ li {
     height: 100%;
     display: block;
     margin-left: 4em;
+    width: 50%;
     cursor: pointer;
 }
 
-.tipos-de-cabelo .slick-next,
-.slick-prev {
-    top: 42% !important;
+.tipos-de-cabelo .slick-next{
+    top: 37% !important;
+}
+.tipos-de-cabelo .slick-prev {
+    top: 51% !important;
 }
 
 .banner-principal img {
@@ -97,7 +101,7 @@ li {
 }
 
 .tratamentoCorreto h1 {
-    text-align: right;
+    text-align: left;
     color: $action-color;
     margin-top: 3.8em;
 }
@@ -119,7 +123,7 @@ li {
     color: #808080;
     text-align: center;
     display: block;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .slider-default .product-name {
@@ -131,7 +135,7 @@ li {
 
 .slider-default img {
     display: block;
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     margin: 0 auto;
 }
@@ -143,7 +147,7 @@ li {
     width: 100%;
     text-align: center;
     text-decoration: line-through;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .slider-default .price .installment {
@@ -151,7 +155,7 @@ li {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .slider-default .price .best-price {
@@ -160,7 +164,7 @@ li {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .slider-default ul {
@@ -210,9 +214,25 @@ li {
     color: #e97a0c;
     padding: 0.5em;
     margin: 2.4em;
+    text-indent: 10%;
     font-weight: bold;
-    border-bottom: 2px solid #e97a0c;
+
+
+    &:after {
+        content: "";
+        margin-top: 0.5em;
+        width: 100%;
+        float: left;
+        display: block;
+        background: #e97a0c;
+        left: 0;
+        position: absolute;
+        height: 1px;
+        right: 0;
+    }
+
 }
+
 
 .add {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px 1px rgba(0, 0, 0, 0.19);
@@ -225,7 +245,7 @@ li {
     display: block;
     padding: 0px;
     background-color: #51bcb5;
-    font-size: 18px;
+    font-size: 16px;
     height: 3em;
     text-transform: uppercase;
     font-weight: bold;
@@ -256,6 +276,7 @@ li {
 
 #bloco-destaque .uso-diario h1 {
     color: #ef9d4f;
+    font-size: 25px;
 }
 
 #bloco-destaque .uso-diario .btn-lg {
@@ -278,19 +299,24 @@ li {
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
+.jumbotron p {
+    font-size: 19px!important;
+}
+
 #bloco-destaque div h1 {
     font-weight: bold;
     margin-top: 0px;
 }
 
 #bloco-destaque div .btn-lg {
-    padding: 25px 74px;
-    font-size: 20px;
+    padding: 13px 50px;
+    font-size: 18px;
 }
 
 #bloco-destaque .uso-profissional {
     background: #f3f3f3;
     h1 {
+        font-size: 25px;
         color: #1bb2a6;
     }
     .btn-lg {
@@ -300,7 +326,7 @@ li {
 }
 
 #bloco-novidades h1 {
-    font-size: 50px;
+    font-size: 25px;
     color: #ef9d4f;
     padding: 0.5em;
     margin: 1em;
@@ -322,4 +348,16 @@ li {
         display: inline-block;
         padding: 3em;
     }
+    & img {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+    }
+}
+.slider-default .slick-next {
+    top: 45%!important;
+}
+.slider-default .slick-prev {
+    top: 43% !important;
 }
