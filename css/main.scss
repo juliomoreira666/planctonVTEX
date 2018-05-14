@@ -66,9 +66,10 @@ li {
     cursor: pointer;
 }
 
-.tipos-de-cabelo .slick-next{
+.tipos-de-cabelo .slick-next {
     top: 37% !important;
 }
+
 .tipos-de-cabelo .slick-prev {
     top: 51% !important;
 }
@@ -214,10 +215,8 @@ li {
     color: #e97a0c;
     padding: 0.5em;
     margin: 2.4em;
-    text-indent: 10%;
+    text-indent: 17%;
     font-weight: bold;
-
-
     &:after {
         content: "";
         margin-top: 0.5em;
@@ -230,9 +229,7 @@ li {
         height: 1px;
         right: 0;
     }
-
 }
-
 
 .add {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px 1px rgba(0, 0, 0, 0.19);
@@ -300,7 +297,7 @@ li {
 }
 
 .jumbotron p {
-    font-size: 19px!important;
+    font-size: 19px !important;
 }
 
 #bloco-destaque div h1 {
@@ -355,9 +352,16 @@ li {
         height: auto;
     }
 }
+
 .slider-default .slick-next {
-    top: 45%!important;
+    top: 45% !important;
 }
+
 .slider-default .slick-prev {
     top: 43% !important;
+}
+
+body>header>div.row.menu-principal.margin-reset>div {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }

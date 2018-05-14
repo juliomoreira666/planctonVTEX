@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <vtex:metaTags/>
     <vtex:template id="2018-styles-plancton" />
     <title>Home Plancton Produtos</title>
 </head>
@@ -20,7 +21,7 @@
             <div class="col-md-6">
                 <vtex.cmc:ProductImage/>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="nome-produto">
                     <vtex.cmc:productName/>
                 </div>
@@ -40,10 +41,10 @@
         </div>
     </div>
     <div class="row margin-reset descricao-produto">
+        <h1>
+            DESCRIÇÃO
+        </h1>
         <div class="container">
-            <h1>
-                DESCRIÇÃO
-            </h1>
             <div class="descricao-texto">
                 <vtex.cmc:ProductDescription/>
             </div>
@@ -54,6 +55,18 @@
             <vtex.cmc:UserReview/>
         </div>
     </div>
+    <div class="row margin-reset" id="veja-tambem">
+        <h1>VEJA TAMBÉM</h1>
+        <div class="container">
+            <div class="col-md-12 padding-reset slider-default">
+                <div class="container-fluid">
+                    <!--  placeholder -->
+                    <vtex:contentPlaceHolder id="colection-destaques" />
+                    <!-- /placeholder -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Footer-->
     <vtex:template id="2018-plancton-footer" />
     <!--Footer-->
@@ -62,7 +75,18 @@
     <vtex:template id="2018-scripts-plancton" />
     <!--Scripts-->
     <script>
-        $("label.prefixo").prepend('<img src="https://i.imgur.com/mr9XQaw.png"/>'); 
+        $("label.prefixo").prepend('<img src="https://i.imgur.com/mr9XQaw.png"/>');
+
+        function changeText() {
+            var botaoComprar = document.querySelector('.buy-button');
+            botaoComprar.text = 'COMPRE JÁ';
+        }
+
+        $(document).ready(function () {
+            changeText();
+            $(".valor-dividido").insertAfter(".preco-a-vista");
+            $('.shipping-value').trigger("click");
+        });
     </script>
 </body>
 
