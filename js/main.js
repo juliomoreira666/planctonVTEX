@@ -86,5 +86,7 @@ function changeText() {
 
 $(document).ready(function () {
     changeText();
+    $(".valor-dividido").insertAfter(".preco-a-vista");
+    $('.shipping-value').trigger("click");
 });
 
