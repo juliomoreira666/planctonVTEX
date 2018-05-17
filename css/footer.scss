@@ -69,11 +69,12 @@ footer {
         & .col-md-6 {
             padding: 30px;
         }
+        & img {
+            width: 40%;
+        }
     }
     & .col-md-3 {
         padding: 20px;
     }
-    & img {
-        width: 40%;
-    }
+  
 }
