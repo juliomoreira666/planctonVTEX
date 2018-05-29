@@ -84,6 +84,10 @@ footer .copyright .col-md-6 {
   padding: 30px;
 }
 
+footer .copyright img {
+  width: 40%;
+}
+
 footer .col-md-3 {
   padding: 20px;
 }

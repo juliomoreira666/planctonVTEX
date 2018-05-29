@@ -1,3 +1,5 @@
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 .apresentacao .thumbs {
     text-align: center;
     float: left;
@@ -218,3 +220,464 @@
 .produto header {
     margin-bottom: 3em;
 }
+
+#compre-junto{
+& #divTitulo {
+    display: none;
+}
+& h3 a {
+    color: #808080;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+ & h1 {
+    font-size: 22px;
+    color: #e97a0c;
+    padding: 0.5em;
+    margin: 2.4em;
+    text-indent: 17%;
+    font-weight: bold;
+
+    &:after {
+        content: "";
+        margin-top: 0.5em;
+        width: 100%;
+        float: left;
+        display: block;
+        background: #e97a0c;
+        left: 0;
+        position: absolute;
+        height: 1px;
+        right: 0;
+    }
+}
+& .plus {
+    font-size: 70px;
+    font-weight: 700;
+    color: #e97a0c;
+}
+& .buy-together {
+    display: none;
+}
+& .equal {
+    font-size: 70px;
+    font-weight: 700;
+    color: #e97a0c;
+}
+& .comprar-junto a {
+    margin-top: 1em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 700;
+    /* margin-top: 10px; */
+    border-radius: 13px;
+    padding: 13px;
+    float: left;
+    background-color: #51bcb5;
+}
+& .comprar-junto {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+}
+& .buy {
+    font-size: 18px;
+    color: #15968d;
+    width: 100%;
+    float: left;
+    margin-top: 4em;
+    margin-left: 3em;
+}
+}
+.avaliacao-consumidor {
+    & h4 {
+    font-size: 22px;
+    color: #e97a0c;
+    padding: 0.5em;
+    margin: 2.4em;
+    text-indent: -6%;
+    font-weight: bold;
+    }
+    & hr {
+        display: none;
+    }
+    & #userReviewShowAllComments {
+       display: none;
+
+    }
+    & #lnkPubliqueResenha {
+            background-color: #51bcb5;
+            border: 0 none;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            min-height: 43px;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+            text-decoration: none;
+    }
+    & #ulPubliqueResenha li {
+        width: 100%;
+        float: left;
+    }
+    & #ulPubliqueResenha {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/** ************************************************************************************ **/
+/** *********** AVALIACOES **/
+/** ************************************************************************************ **/
+/* RATING */
+#reviews ul.rating li .voteRatingBar { 
+    background: none repeat scroll 0 0 #F5F5F5;  
+    display: block; 
+    height: 20px;  
+    overflow: hidden; 
+    border: 1px solid #e5e5e5; 
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.10); 
+    border-radius: 3px;
+  }
+    #reviews ul.rating li .voteRatingBar span { 
+      background: none repeat scroll 0 0 #F0AD4E; 
+      display: block; 
+      height: 20px; 
+      box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.15); 
+      border-radius: 3px 0 0 3px;
+      border-bottom: 3px solid #CC9342;
+    }
+      #reviews ul.rating li .voteRatingBar + span { 
+        color: #9B9B9B; 
+        font-size: 12px;
+        position: absolute; 
+        right: 10px;
+        top: 0;
+        line-height: 20px;
+      }
+        #reviews ul.rating {  padding: 0;}
+        #reviews ul.rating li { 
+          clear: both; 
+          display: block; 
+          margin: 10px 0; 
+          max-width: 320px; 
+          overflow: hidden; 
+          position: relative; 
+          width: 100%; 
+        }
+          #reviews ul.rating li em { 
+            float: left; 
+            margin-right: 15px;
+          }
+        #reviews .avalie-produto { 
+          display: block; 
+          padding-top: 20px; 
+        }
+          #reviews .avalie-produto h5 { 
+            color: #333; 
+            font-size: 13px; 
+            font-weight: 700; 
+            line-height: 20px; 
+          }
+          #reviews .avalie-produto a { 
+            display: block; 
+            float: left; 
+            margin: 10px 0; 
+          }
+    #reviews hr,
+    #reviews p.media em span,
+    #reviews .links-resenha-usuario { display: none; }
+  
+    #reviews .resenhas{
+      padding: 0;
+      border-top: 0 none;
+      margin: 0;
+    }
+      #reviews .resenhas .quem{
+        padding: 0;
+      }
+      #reviews .resenhas .opiniao-ajudou{
+        padding-top: 15px;
+        color: #333;
+        font-size: 13px;
+        font-weight: 300;
+      }
+        #reviews .resenhas .opiniao-ajudou{
+          padding-top: 15px;
+          color: #333;
+          font-size: 13px;
+          font-weight: 300;
+        }
+          #reviews .resenhas .opiniao-ajudou .bts li{
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px 5px 0 0;
+          }
+            #reviews .resenhas .opiniao-ajudou .bts li a{
+              color: #D0021B;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 18px;
+            }
+  
+    #publishUserReview{
+    }
+      #publishUserReview #formUserReview{
+        width: 500px;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 10px 20px;
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        margin-left: -250px;
+        box-shadow: 0 0 10px #ccc;
+        z-index: 99999;
+      }
+        #publishUserReview #formUserReview .header{
+          padding: 0;
+          margin: 0;
+        }
+          #publishUserReview #formUserReview .header .close{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+          }
+            #publishUserReview #formUserReview .header .close a{
+              color: #000;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 20px;
+            }
+          #publishUserReview #formUserReview .footer,
+          #publishUserReview #formUserReview .header h1{
+            display: none;
+          }
+          #publishUserReview #formUserReview label{
+            display: block;
+          }
+          #publishUserReview #formUserReview input + label{
+            display: inline-block;
+            vertical-align: middle;
+          }
+          #publishUserReview #formUserReview input{
+            margin: 0;
+          }
+          #publishUserReview #formUserReview input[type=text],
+          #publishUserReview #formUserReview textarea{
+            color: #999999;
+            background-color: #fff;
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 34px;
+            width: 100%;
+          }
+          #publishUserReview #formUserReview .grp{
+            position: relative;
+            margin: 10px 0 5px;
+          }
+          #publishUserReview #formUserReview .grp span{
+            position: absolute;
+            top: 5px;
+            right: 0;
+          }
+          #publishUserReview #formUserReview .ranking{
+            display: block;
+            margin-top: 15px;
+          }
+          #publishUserReview #formUserReview .aviso-resenha{
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: 300;
+            font-style: italic;
+            line-height: 15px;
+          }
+  
+      #reviews .avalie-produto #opcoes-avalie { 
+        display: block; 
+        margin: 10px 0; 
+        width: 100%; 
+      }
+      #reviews .avalie-produto #opcoes-avalie p strong { display: none; }
+      #reviews .avalie-produto #opcoes-avalie .firadio { 
+        margin: 2px 0 0 0; 
+        vertical-align: top; 
+      }
+      #reviews .avalie-produto #opcoes-avalie label { 
+        color: #333; 
+        font-size: 15px; 
+        font-weight: 400; 
+        line-height: 20px; 
+        margin: 0 20px 0 5px; 
+      }
+      #reviews #formUserReview .avaliar a,
+      #reviews #lnkPubliqueResenha { 
+        background-color: #D0021B; 
+        border: 0 none; 
+        border-radius: 4px; 
+        color: #fff; 
+        display: block; 
+        font-size: 14px; 
+        font-weight: 400; 
+        line-height: 20px; 
+        min-height: 43px; 
+        padding: 10px; 
+        width: 250px; 
+        text-align: center; 
+        text-decoration: none; 
+      }
+      #reviews #formUserReview .avaliar a:hover,
+      #reviews #formUserReview .avaliar a:active,
+      #reviews #lnkPubliqueResenha:hover,
+      #reviews #lnkPubliqueResenha:active{ 
+        color: #fff; 
+        opacity: .8; 
+        text-decoration: none; 
+      }    
+  
+      .rating-avalie .ratingStar,
+      .rating-produto{
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+      }
+      .rating-produto:after{
+        content: "Avalie";
+        display: inline-block;
+        font-size: 13px;
+        margin-left: 8px;
+        color: #000;
+        line-height: 20px;
+      }
+      .rating-produto:before, 
+      .rating-demonstrativo:before,
+      .rating-wrapper .rating:before{
+        content: "\f006   \f006   \f006   \f006   \f006";/* f005 - f006 - f123 */
+        font-family: FontAwesome;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F0AD4E;
+        font-style: normal;
+      }
+      .rating-avalie a{
+        text-decoration: none;
+      }
+      .rating-avalie .ratingStar.emptyRatingStar:before,
+      .rating-avalie .ratingStar.filledRatingStar:before{
+        font-family: FontAwesome;
+        font-size: 16px;
+        line-height: 20px;
+        color: #F0AD4E;
+        font-style: normal;
+        content: "\f006";
+        text-decoration: none;
+        -webkit-transition: .300s all;
+                transition: .300s all;
+      }
+      .rating-avalie .ratingStar.filledRatingStar:before{
+        content: "\f005";
+      }
+      .rating-produto.avaliacao50:before, 
+      .rating-produto.a50:before, 
+      .rating-demonstrativo.avaliacao50:before, 
+      .rating-demonstrativo.a50:before, 
+      .rating-wrapper .rating.avaliacao50:before, 
+      .rating-wrapper .rating.a50:before{
+        content: "\f005   \f005   \f005   \f005   \f005";
+      }
+      .rating-produto.avaliacao45:before,
+      .rating-produto.a45:before, 
+      .rating-demonstrativo.avaliacao45:before, 
+      .rating-demonstrativo.a45:before, 
+      .rating-wrapper .rating.avaliacao45:before, 
+      .rating-wrapper .rating.a45:before {
+        content: "\f005   \f005   \f005   \f005   \f123";
+      }
+      .rating-produto.avaliacao40:before, 
+      .rating-produto.a40:before, 
+      .rating-demonstrativo.avaliacao40:before, 
+      .rating-demonstrativo.a40:before, 
+      .rating-wrapper .rating.avaliacao40:before, 
+      .rating-wrapper .rating.a40:before{
+        content: "\f005   \f005   \f005   \f005    \f006";
+      }
+      .rating-produto.avaliacao35:before, 
+      .rating-produto.a35:before, 
+      .rating-demonstrativo.avaliacao35:before, 
+      .rating-demonstrativo.a35:before, 
+      .rating-wrapper .rating.avaliacao35:before,  
+      .rating-wrapper .rating.a35:before {
+        content: "\f005   \f005   \f005   \f123   \f006";
+      }
+      .rating-produto.avaliacao30:before, 
+      .rating-produto.a30:before, 
+      .rating-demonstrativo.avaliacao30:before, 
+      .rating-demonstrativo.a30:before, 
+      .rating-wrapper .rating.avaliacao30:before, 
+      .rating-wrapper .rating.a30:before{
+        content: "\f005   \f005   \f005   \f006   \f006";
+      }
+      .rating-produto.avaliacao25:before, 
+      .rating-produto.a25:before, 
+      .rating-demonstrativo.avaliacao25:before, 
+      .rating-demonstrativo.a25:before, 
+      .rating-wrapper .rating.avaliacao25:before,  
+      .rating-wrapper .rating.a25:before {
+        content: "\f005   \f005   \f123   \f006   \f006";
+      }
+      .rating-produto.avaliacao20:before, 
+      .rating-produto.a20:before, 
+      .rating-demonstrativo.avaliacao20:before, 
+      .rating-demonstrativo.a20:before, 
+      .rating-wrapper .rating.avaliacao20:before, 
+      .rating-wrapper .rating.a20:before{
+        content: "\f005   \f005   \f006   \f006   \f006";
+      }
+      .rating-produto.avaliacao15:before, 
+      .rating-produto.a15:before, 
+      .rating-demonstrativo.avaliacao15:before, 
+      .rating-demonstrativo.a15:before, 
+      .rating-wrapper .rating.avaliacao15:before,  
+      .rating-wrapper .rating.a15:before {
+        content: "\f005   \f123   \f006   \f006   \f006";
+      }
+      .rating-produto.avaliacao10:before, 
+      .rating-produto.a10:before, 
+      .rating-demonstrativo.avaliacao10:before, 
+      .rating-demonstrativo.a10:before, 
+      .rating-wrapper .rating.avaliacao10:before, 
+      .rating-wrapper .rating.a10:before{
+        content: "\f005   \f006   \f006   \f006   \f006";
+      }
+      .rating-produto.avaliacao5:before, 
+      .rating-produto.a5:before, 
+      .rating-demonstrativo.avaliacao5:before, 
+      .rating-demonstrativo.a5:before, 
+      .rating-wrapper .rating.avaliacao5:before,  
+      .rating-wrapper .rating.a5:before {
+        content: "\f123   \f006   \f006   \f006   \f006";
+      }
+      .rating-produto.avaliacao0:before, 
+      .rating-produto.a0:before, 
+      .rating-demonstrativo.avaliacao0:before, 
+      .rating-demonstrativo.a0:before, 
+      .rating-wrapper .rating.avaliacao0:before,  
+      .rating-wrapper .rating.a0:before {
+        content: "\f006   \f006   \f006   \f006   \f006";
+      }
