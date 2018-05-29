@@ -372,3 +372,74 @@ body>header>div.row.menu-principal.margin-reset>div {
     padding-right: 0px !important;
     padding-left: 0px !important;
 }
+
+#search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+    & label {
+        display: none;
+    }
+    & select {
+        display: none;
+    }
+    & legend {
+        display: none;
+    }
+    & input[type="text"] {
+    margin: 0 auto;
+    width: 90%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #1bb2a6;
+    outline: none;
+    float: left;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    }
+    & input[type="button"] {
+    background: #1bb2a6;
+    margin: 0 auto;
+    color: #ffff;
+    width: 10%;
+    background-image: url('/arquivos/search.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45px;
+    float: right;
+    padding: 0 20px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 0px;
+    border: 1px solid #1bb2a6;
+    outline: none;
+    }
+    & .busca {
+        margin: 4em;
+    }
+}
+.ui-autocomplete {
+    width: 43%;
+    padding: 1em;
+    float: left;
+    background: #ffff;
+    color: #808080;
+    border-top: none!important  ;
+    border-radius: 1px;
+    height: auto;
+    border: 1px solid #1bb2a6;
+    & a {
+        color: #808080;
+        cursor: pointer;
+    }
+    & li {
+        cursor: pointer;
+    }
+}
