@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title>Plancton</title>
+    <vtex:metaTags/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <vtex:template id="Plancton-Styles-2017" />
+    <link rel="stylesheet" type="text/css" href="/arquivos/vtex-smartResearch.css" />
+    <vtex:template id="2018-styles-plancton" />
+</head>
+
+<body>
+
+    <!--Header-->
+    <vtex:template id="2018-plancton-header" />
+    <!--Header-->
+
+    <main>
+        <div class="sidebar" style="display: none;">
+            <vtex.cmc:searchNavigator/>
+            <vtex.cmc:departmentNavigator/>
+            <vtex.cmc:departmentLinks/>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <section class="mainShelf col-xs-12 col-md-12">
+                    <div id="nav-dep">
+                        <div class="left">
+                            <vtex.cmc:breadCrumb />
+                        </div>
+                        <div class="right"></div>
+                    </div>
+                    <!-- nav-dep END -->
+                    <div class="banner-departament">
+                        <vtex:contentPlaceHolder id="banner-departamento" />
+                    </div>
+                    <vtex.cmc:searchResult layout="9443a451-ddaf-4128-a648-c64e65fe9d0c" itemCount="18" columnCount="18" />
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <vtex:template id="2018-plancton-footer" />
+    <!--Footer-->
+
+    <!--Scripts-->
+    <vtex:template id="2018-scripts-plancton" />
+    <!--Scripts-->
+    <script type="text/javascript" src="/arquivos/vtex-smartResearch.js"></script>
+    <script type="text/javascript" src="/arquivos/interactive-shelf.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.orderBy').first().appendTo('#nav-dep .right');
+        });
+    </script>
+
+</body>
+
+</html>
