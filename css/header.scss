@@ -1,15 +1,14 @@
 header .contato-div {
-    background-color: #117f76;
-    color: $primary-color;
-    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #15968D;
     font-size: 18px;
     padding: 7px;
     text-align: right;
 }
 
 header .menu-principal {
-    background-color: $cor-principal;
-    color: $primary-color;
+    background-color: #FFFFFF;
+    color: #B2B2B2;
     padding: 5px;
 }
 
@@ -33,22 +32,30 @@ header .menu-interno {
 header #menu ul li {
     margin-right: 30px;
     font-size: 14px;
-    font-weight: bold;
     display: inline-table;
-    vertical-align: middle;
+    vertical-align: middle;  
 }
-
+@media all and (max-width: 1366px) and (min-width: 1000px) {
+    header #menu ul li {
+      margin-right: 22px!important;
+    }
+  }
 header #menu ul {
     margin-top: 0.5em;
 }
 
 header #menu ul li a {
+    color: #878787;
     vertical-align: middle;
     display: block;
 }
 
+header .logo a {
+    display: block;
+}
+
 header #menu ul li a.linksmenu:hover {
-    border-bottom: 2px solid $primary-color;
+    border-bottom: 2px solid #15968D;
 }
 
 header #menu ul li a.linksmenu:active {
@@ -60,6 +67,7 @@ header #menu ul .login-action a {
     width: 110px !important;
     text-align: center;
     width: 100%;
+    color: #FFFFFF!important;
     border-radius: 25px;
     padding: 8px;
     margin-top: 0.2em;

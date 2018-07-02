@@ -29,8 +29,8 @@ a:hover {
 
 .qualSeuTipo h1 {
     font-size: 22px;
-    margin-top: 4.6em;
-    color: $action-color;
+    margin-top: 3.8em;
+    color: #b2b2b2;
 }
 
 .qualSeuTipo {
@@ -41,6 +41,43 @@ a:hover {
 li {
     list-style: none !important;
 }
+
+.busca {
+   & legend {
+       display: none;
+   }
+   & label{
+       display: none;
+   }
+   & select {
+       display: none;
+   }
+   & input[type="button"] {
+       display: none;
+   }
+   & .fulltext-search-box {
+    background-color: #eeeeee;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(/arquivos/search.png);
+    margin-top: 0.4em;
+    background-repeat: no-repeat;
+    height: 30px;
+    border-radius: 25px;
+    background-position: 96% 3px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px 1px rgba(0,0,0,0.08);
+   }
+   
+}
+
+.search-action {
+width: 30%;
+position: relative;
+display: block;
+}
+
+
 
 .margin-reset {
     margin-left: 0px !important;
@@ -60,7 +97,7 @@ li {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 4em;
     height: 100%;
     margin-left: 4em;
     cursor: pointer;
@@ -192,7 +229,7 @@ li {
 }
 
 .slider-default .slick-prev {
-    left: 0px !important;
+    left: -40px !important;
 }
 
 .slick-prev,
@@ -271,6 +308,10 @@ li {
 
 #bloco-destaque {
     margin-top: 10em;
+
+    & .btn:hover  {
+    padding: 16px 60px;
+    }
 }
 
 #bloco-destaque .uso-diario {
@@ -443,7 +484,7 @@ body>header>div.row.menu-principal.margin-reset>div {
     }
 }
 .ui-autocomplete {
-    width: 43%;
+    width: 18%!important;
     position: fixed;
     display: block;
     padding: 1em;
@@ -451,8 +492,10 @@ body>header>div.row.menu-principal.margin-reset>div {
     float: left;
     background: #ffff;
     color: #808080;
-    border-top: none!important  ;
+    border-top: none !important;
     border-radius: 1px;
+    top: 16%!important;
+    margin-left: 1em;
     height: 300px;
     border: 1px solid #1bb2a6;
     & a {
